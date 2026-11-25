@@ -1,0 +1,10 @@
+.split-parent {
+  overflow: clip;
+  overflow-clip-margin: 0.12em;
+}
+
+.split-char { will-change: transform, opacity; }
+
+@media (prefers-reduced-motion: reduce) {
+  .split-char { transform: none !important; opacity: 1 !important; }
+}

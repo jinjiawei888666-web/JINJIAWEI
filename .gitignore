@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env.local
+.env.*.local
+vite-dev.log
+vite-dev-error.log
+.tools/
+.github-publish/
+JINJIAWEI-GitHub-Pages/
+.env
+*.log
+/*.ai
+/*.png
+/*.jpg

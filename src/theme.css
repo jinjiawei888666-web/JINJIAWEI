@@ -1,0 +1,189 @@
+:root {
+  --accent: #f7ab54;
+  --accent-ink: #21160c;
+  --accent-on-light: #92501a;
+  --accent-hover: #fff0df;
+}
+
+.strength-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; border-top: 0; }
+.expertise-page { min-height: 100svh; padding-bottom: 64px; }
+.expertise-page nav { display: flex; justify-content: space-between; gap: 24px; padding: 36px 0; border-bottom: 1px solid #ffffff25; font-size: 12px; }
+.expertise-page nav span { color: #a89f94; }
+.expertise-page header { padding: 100px 0 60px; }
+.expertise-page h1 { font-size: clamp(48px, 6vw, 96px); margin: 24px 0; letter-spacing: -.055em; }
+.expertise-page header > p:last-child { color: #aaa39a; line-height: 1.9; }
+.expertise-empty { padding: 64px 0; border-top: 1px solid #ffffff25; border-bottom: 1px solid #ffffff25; color: #8e8880; }
+.expertise-back { display: inline-block; margin-top: 32px; color: var(--accent); }
+@media(max-width: 900px) { .strength-grid { grid-template-columns: 1fr; }.expertise-page nav span { display: none; }.expertise-page header { padding: 64px 0 40px; } }
+
+.about-grid {
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: clamp(48px, 8vw, 140px);
+}
+
+.bio h2,
+.bio h2 span,
+.works h2,
+.works h2 span,
+.strengths h2,
+.strengths h2 span,
+.contact h2,
+.contact h2 i {
+  font-family: Manrope, "Noto Sans SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -.055em;
+  line-height: 1.18;
+}
+
+.bio-copy {
+  max-width: 620px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.hero-role,
+.wordmark span,
+.accent,
+.section-label,
+.portrait-mark,
+.stats b span,
+.text-link b,
+.nav-contact b,
+.scroll span,
+.hero-contact-grid small {
+  color: var(--accent);
+}
+
+.works .section-label {
+  color: var(--accent-on-light);
+}
+
+.snow .project-art {
+  background: radial-gradient(ellipse at 50% 35%, #d8edff, #5899d7);
+  padding: 20px 20px 112px;
+}
+
+.snow .project-art::after {
+  display: none;
+}
+
+.snow .project-art img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.snow .project-info {
+  margin-top: auto;
+  background: #101c2f;
+}
+
+.project-open {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ffffff99;
+  border-radius: 50%;
+  font-size: 24px;
+  transition: background-color 220ms ease, color 220ms ease, border-color 220ms ease;
+}
+
+.snow:hover .project-open,
+.snow:focus-visible .project-open {
+  background: var(--accent);
+  color: var(--accent-ink);
+  border-color: var(--accent);
+}
+
+.text-link {
+  border-color: var(--accent);
+}
+
+.hero-cn .hero-cn-divider {
+  background: #f7ab5466;
+}
+
+.availability b {
+  background: var(--accent);
+  box-shadow: 0 0 9px #f7ab5455;
+}
+
+.contact,
+.hero-panel .nav-contact {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.contact .eyebrow {
+  color: #51331c;
+}
+
+.hero-bottom > a,
+.project-info button,
+.hero-panel .nav-contact,
+.text-link,
+.email,
+.contact-bottom a,
+.hero-contact-grid a {
+  transition: background-color 220ms ease, color 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+}
+
+.project-info button {
+  cursor: pointer;
+}
+
+.hero-panel .nav-contact:hover,
+.hero-panel .nav-contact:focus-visible {
+  background: var(--accent-hover);
+  color: var(--accent-ink);
+  box-shadow: 0 4px 22px #f7ab5426;
+}
+
+.hero-bottom > a:hover,
+.hero-bottom > a:focus-visible,
+.project-info button:hover,
+.project-info button:focus-visible {
+  background: var(--accent);
+  color: var(--accent-ink);
+  border-color: var(--accent);
+  opacity: 1;
+}
+
+.text-link:hover,
+.text-link:focus-visible,
+.hero-contact-grid a:hover,
+.hero-contact-grid a:focus-visible {
+  color: var(--accent);
+}
+
+.email:hover,
+.email:focus-visible,
+.contact-bottom a:hover,
+.contact-bottom a:focus-visible {
+  color: #fffaf3;
+  border-color: #fffaf3;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 5px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a,
+  button,
+  .strength-grid article {
+    transition: none !important;
+  }
+}

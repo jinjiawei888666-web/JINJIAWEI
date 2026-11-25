@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="120" viewBox="0 0 360 120">
+  <defs>
+    <pattern id="weave" width="5" height="5" patternUnits="userSpaceOnUse">
+      <path d="M0 0H5M0 0V5" fill="none" stroke="#b99ad8" stroke-opacity=".15"/>
+    </pattern>
+  </defs>
+  <rect width="360" height="120" fill="#251a37"/>
+  <rect width="360" height="120" fill="url(#weave)"/>
+  <path d="M0 12H360M0 108H360" fill="none" stroke="#a681d6" stroke-width="2" stroke-dasharray="5 5"/>
+  <text x="180" y="72" fill="#e7d3f6" font-family="Arial,sans-serif" font-size="32" font-weight="bold" letter-spacing="7" text-anchor="middle">JIAWEI JIN</text>
+</svg>

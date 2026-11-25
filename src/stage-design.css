@@ -1,0 +1,14 @@
+.stage-design .case-header { padding-bottom: 60px; }
+.stage-section-head { display: flex; justify-content: space-between; align-items: end; gap: 24px; border-bottom: 1px solid #ffffff24; padding-bottom: 24px; margin-bottom: 40px; }
+.stage-section-head h2 { margin: 0; }
+.stage-section-head > span { font: 10px/1.8 "DM Mono", monospace; color: #a89f94; }
+.stage-scene-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; padding-bottom: 90px; }
+.stage-scene-image { display: flex; align-items: center; justify-content: center; aspect-ratio: 4 / 3; overflow: hidden; }
+.stage-design .stage-scene-image img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.stage-scene-grid figcaption { margin-top: 24px; }
+.stage-scene-grid figcaption > span { font-size: 10px; }
+.stage-scene-grid figcaption h3 { font: 600 22px/1.35 Manrope, "Noto Sans SC", sans-serif; color: #ede9e3; margin: 10px 0 0; }
+.stage-scene-grid figcaption p { font: 14px/1.95 Manrope, "Noto Sans SC", sans-serif; color: #aaa39a; max-width: 650px; margin: 0 0 16px; }
+.stage-scene-grid figcaption h3 + p { line-height: 1.5; color: var(--accent); }
+.stage-scene-grid figcaption a { color: var(--accent); font-size: 12px; }
+@media(max-width: 760px) { .stage-scene-grid { grid-template-columns: 1fr; gap: 44px; }.stage-section-head { align-items: start; flex-direction: column; gap: 16px; } }

@@ -1,0 +1,12 @@
+.motion-design .case-header { padding-bottom: 60px; }
+.motion-section-head { display: flex; justify-content: space-between; align-items: end; gap: 24px; border-bottom: 1px solid #ffffff24; padding-bottom: 24px; margin-bottom: 40px; }
+.motion-section-head h2 { margin: 0; }
+.motion-section-head > span { color: #a89f94; font: 10px/1.8 "DM Mono", monospace; }
+.motion-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; padding-bottom: 90px; }
+.motion-grid video { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: contain; background: #101114; }
+.motion-grid figcaption { margin-top: 24px; }
+.motion-grid h3 { margin: 10px 0; font: 600 20px/1.5 Manrope, "Noto Sans SC", sans-serif; color: #ede9e3; }
+.motion-grid figcaption p { color: #999188; margin: 8px 0 14px; font-size: 11px; }
+.motion-grid figcaption a { color: var(--accent); font-size: 12px; }
+.motion-grid figcaption .motion-error { color: var(--accent); }
+@media(max-width: 900px) { .motion-grid { grid-template-columns: 1fr; gap: 48px; }.motion-section-head { align-items: start; flex-direction: column; } }

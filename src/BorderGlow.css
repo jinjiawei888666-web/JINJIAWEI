@@ -1,0 +1,122 @@
+.border-glow-card {
+  --edge-proximity: 0;
+  --cursor-angle: 0deg;
+  --edge-cone: conic-gradient(from var(--cursor-angle), black, transparent 13%, transparent 87%, black);
+  position: relative;
+  isolation: isolate;
+  display: block;
+  height: 100%;
+  border: 1px solid #ffffff29;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #15161c, #101116 70%);
+}
+
+.strength-depth-card:hover,
+.strength-depth-card:focus-visible {
+  z-index: 1;
+}
+
+.strength-depth-card {
+  position: relative;
+  border-radius: 20px;
+}
+
+.strength-depth-card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.strength-depth-card .depth-card-surface,
+.strength-depth-card .depth-card-spotlight {
+  border-radius: inherit;
+}
+
+.border-glow-cover {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.border-glow-cover img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+}
+
+@media (min-width: 700px) and (prefers-reduced-motion: no-preference) {
+  .border-glow-cover img {
+    transform: scale(1.08);
+  }
+}
+
+@media (max-width: 699px), (prefers-reduced-motion: reduce) {
+  .border-glow-cover img {
+    transform: none !important;
+  }
+}
+
+.border-glow-cover::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, #0b0d12a6 0%, #0b0d1218 24%, #0b0d121a 42%, #0b0d12e8 79%, #0b0d12fa 100%);
+}
+
+.edge-light,
+.edge-light::before,
+.edge-light::after {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.edge-light {
+  mask-image: var(--edge-cone);
+  opacity: var(--edge-proximity);
+  transition: opacity 140ms ease-out;
+}
+
+.edge-light::before {
+  content: '';
+  box-shadow: inset 0 0 18px color-mix(in srgb, var(--glow-color) 46%, transparent);
+}
+
+.edge-light::after {
+  content: '';
+  border: 1px solid var(--glow-color);
+}
+
+.border-glow-inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: clamp(190px, 17vw, 285px);
+  height: 100%;
+  padding: clamp(20px, 2vw, 30px);
+}
+
+.border-glow-inner h3 {
+  margin: auto 0 10px;
+  padding-top: 46px;
+  font-size: 25px;
+  letter-spacing: -.06em;
+}
+
+.border-glow-inner .arrow {
+  color: var(--glow-color);
+}
+
+.strength-grid .border-glow-inner p {
+  color: #c2c4cd;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .border-glow-card .edge-light {
+    display: none;
+  }
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 900">
+  <rect width="640" height="900" fill="#e7d3f6"/>
+  <circle cx="320" cy="365" r="184" fill="#1b1328"/>
+  <circle cx="320" cy="365" r="158" fill="none" stroke="#e7d3f6" stroke-width="2"/>
+  <g font-family="Arial,sans-serif">
+    <text x="320" y="413" fill="#f9f1ff" font-size="138" font-weight="bold" font-style="italic" text-anchor="middle">JJ</text>
+    <text x="320" y="651" fill="#1b1328" font-size="30" letter-spacing="4" text-anchor="middle">JIAWEI JIN</text>
+  </g>
+</svg>

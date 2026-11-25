@@ -1,0 +1,18 @@
+.graphic-design .case-header { padding-bottom: 60px; }
+.graphic-section-head { display: flex; justify-content: space-between; align-items: end; gap: 24px; padding-bottom: 24px; border-bottom: 1px solid #ffffff24; margin-bottom: 40px; }
+.graphic-section-head h2 { margin: 0; }
+.graphic-section-head > span { font: 10px/1.8 "DM Mono", monospace; color: #a89f94; }
+.graphic-section-head > p { color: #aaa39a; font-size: 13px; margin: 0; }
+.graphic-poster-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+.graphic-poster-link { display: flex; align-items: center; justify-content: center; aspect-ratio: 1 / 2; }
+.graphic-design .graphic-poster-link img { width: auto; max-width: 100%; height: auto; max-height: 100%; object-fit: contain; }
+.graphic-poster-grid figcaption h3 { color: #ede9e3; font: 600 16px/1.6 Manrope, "Noto Sans SC", sans-serif; margin: 8px 0; }
+.graphic-poster-grid figcaption > a { display: inline-block; color: var(--accent); }
+.graphic-mobile { padding: 110px 0 90px; }
+.graphic-phone-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; }
+.graphic-phone-grid article > header { min-height: 85px; }
+.graphic-phone-grid article > header span { color: var(--accent); font: 11px "DM Mono", monospace; }
+.graphic-phone-grid article > header h3 { font-size: 16px; font-weight: 500; margin: 12px 0 24px; }
+.graphic-phone-grid .phone-demo { max-width: 100%; }
+@media(max-width: 900px) { .graphic-phone-grid { gap: 24px; grid-template-columns: 1fr; }.graphic-phone-grid article { width: 100%; max-width: 380px; margin: 0 auto 36px; }.graphic-poster-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 24px; }.graphic-section-head { align-items: start; flex-direction: column; } }
+@media(max-width: 580px) { .graphic-poster-grid { grid-template-columns: 1fr; }.graphic-poster-link { aspect-ratio: auto; }.graphic-design .graphic-poster-link img { width: 100%; max-height: none; }.graphic-poster-grid figcaption h3 { font-size: 16px; }.graphic-mobile { padding-top: 70px; } }

@@ -1,0 +1,18 @@
+.iqoo-case .case-header h1 {
+  font-size: clamp(44px, 6vw, 90px);
+}
+
+.iqoo-case .case-palette span {
+  background: #2257a0;
+  color: #fff;
+}
+
+.iqoo-case .case-palette span:nth-child(2) {
+  background: #efba19;
+  color: #302715;
+}
+
+.iqoo-case .case-palette span:nth-child(3) {
+  background: #f4f6fa;
+  color: #192333;
+}

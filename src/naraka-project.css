@@ -1,0 +1,14 @@
+.naraka-case .case-palette span {
+  background: #45251b;
+  color: #fff1d6;
+}
+
+.naraka-case .case-palette span:nth-child(2) {
+  background: #d8ad56;
+  color: #35230f;
+}
+
+.naraka-case .case-palette span:nth-child(3) {
+  background: #eee3cd;
+  color: #35230f;
+}

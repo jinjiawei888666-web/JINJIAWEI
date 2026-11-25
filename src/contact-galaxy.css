@@ -1,0 +1,110 @@
+.contact.contact-perspective-section {
+  isolation: isolate;
+  min-height: 760px;
+  background:
+    radial-gradient(circle at 50% 58%, rgba(77, 67, 145, 0.12), transparent 34%),
+    #090a0c;
+  color: #f7f6f2;
+}
+
+.contact-perspective-section::before,
+.contact-perspective-section::after { content: none; }
+
+.contact-perspective {
+  position: absolute !important;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.contact-perspective-section .contact-inner {
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 9vh 0 8vh;
+}
+
+.contact-perspective-section .eyebrow {
+  align-self: flex-start;
+  text-align: left;
+  margin: 0 0 28px;
+  color: rgba(247, 246, 242, 0.76);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+}
+
+.contact-perspective-section h2 {
+  margin: 0;
+  color: #fff;
+  text-shadow: 0 4px 36px rgba(0, 0, 0, 0.72);
+}
+
+.contact-perspective-section .contact-fold-heading {
+  max-width: 9.8em;
+  line-height: 1.06;
+}
+
+.contact-perspective-section .contact-fold-heading .vapor-type {
+  line-height: 1.06;
+  letter-spacing: 0.012em;
+  font-weight: 800;
+}
+
+.contact-translation {
+  margin: 30px 0 0;
+  color: rgba(247, 246, 242, 0.68);
+  font: 10px/1.5 "DM Mono", monospace;
+  letter-spacing: 0.24em;
+}
+
+.contact-perspective-section .email {
+  align-self: center;
+  margin-top: 34px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.48);
+  color: #fff;
+  font-size: clamp(18px, 1.45vw, 25px);
+  line-height: 1.2;
+  letter-spacing: -0.018em;
+}
+
+.contact-perspective-section .email span { margin-left: 12px; }
+
+.contact-perspective-section .contact-bottom {
+  bottom: 38px;
+  color: rgba(247, 246, 242, 0.66);
+  text-align: left;
+  font-size: 9px;
+  line-height: 1.65;
+  letter-spacing: 0.08em;
+}
+
+.contact-perspective-section .contact-bottom p:nth-child(2) { text-align: center; }
+.contact-perspective-section .contact-bottom a {
+  color: rgba(247, 246, 242, 0.78);
+  border-color: rgba(255, 255, 255, 0.38);
+  text-align: right;
+}
+
+@media (max-width: 900px) {
+  .contact-perspective-section .contact-inner { padding: 10vh 0 9vh; }
+  .contact-perspective-section .eyebrow { margin-bottom: 22px; }
+  .contact-perspective-section .contact-fold-heading { max-width: 8.8em; }
+  .contact-perspective-section .contact-fold-heading .vapor-type {
+    font-size: clamp(3rem, 14vw, 5.6rem) !important;
+    line-height: 1.04;
+    letter-spacing: 0.006em;
+  }
+  .contact-translation {
+    max-width: 24em;
+    font-size: 9px;
+    letter-spacing: 0.16em;
+  }
+  .contact-perspective-section .email { margin-top: 25px; }
+  .contact-perspective-section .contact-bottom {
+    bottom: 25px;
+    font-size: 8px;
+  }
+  .contact-perspective-section .contact-bottom p:nth-child(2) { display: none; }
+}

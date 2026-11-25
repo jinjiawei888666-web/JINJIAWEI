@@ -1,0 +1,14 @@
+.grainient-container {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background: linear-gradient(125deg, #0c076a, #7e4b8a 55%, #b497cf);
+}
+
+.grainient-container canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
