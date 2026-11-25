@@ -155,7 +155,7 @@ function App() {
 
     <section className="contact contact-perspective-section" id="contact">
       <PerspectiveGrid width="100%" height="100%" speed={0.26} color="#8b7cff" gridScale={0.9} lineThickness={0.75} antialiasQuality={64} opacity={0.52} fadeSmoothness={0.74} perspective={14} gridLength={12} curve={0.32} bottomFade="#090a0c" className="contact-perspective" />
-      <div className="shell contact-inner"><p className="eyebrow">04 — GET IN TOUCH</p><h2 className="contact-fold-heading"><VaporType words={['让下一个想法，\n成为现场。']} color="#ffffff" vaporColor="#8b7cff" density={1.05} particleSize={1.3} spread={1.15} rise={0.7} turbulence={0.9} sweep="left" condense={1.9} startOnView /></h2><p className="contact-translation">LET THE NEXT IDEA TAKE THE STAGE.</p><SplitText tag="a" className="email" href="https://github.com/jinjiawei888666-web">GitHub 主页 <span>↗</span></SplitText><div className="contact-bottom"><p>HANGZHOU, CHINA<br/>AVAILABLE FOR SELECTED PROJECTS</p><p>© 2026 JIN JIAWEI</p><a href="#top">BACK TO TOP ↑</a></div></div>
+      <div className="shell contact-inner"><p className="eyebrow">04 — GET IN TOUCH</p><h2 className="contact-fold-heading"><VaporType words={['让下一个想法，\n成为现场。']} color="#ffffff" vaporColor="#8b7cff" density={1.05} particleSize={1.3} spread={1.15} rise={0.7} turbulence={0.9} sweep="left" condense={1.9} startOnView /></h2><p className="contact-translation">LET THE NEXT IDEA TAKE THE STAGE.</p><SplitText tag="a" className="email" href="mailto:652210010@qq.com">652210010@qq.com <span>↗</span></SplitText><div className="contact-bottom"><p>HANGZHOU, CHINA<br/>AVAILABLE FOR SELECTED PROJECTS</p><p>© 2026 JIN JIAWEI</p><a href="#top">BACK TO TOP ↑</a></div></div>
     </section>
   </main>
 }
